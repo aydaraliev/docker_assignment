@@ -1,6 +1,6 @@
 # docker assignment
 
-#### This repository contains Dockerfile to build an image that is based on Ubuntu 18.04 and contains the following software with all the dependencies:
+#### This repository contains Dockerfile that builds an image that is based on Ubuntu 18.04 and contains the following software with all the dependencies:
 	
 	* samtools version 1.12 with htslib plugins
 	* libdeflate version 1.7

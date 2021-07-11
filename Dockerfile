@@ -41,6 +41,7 @@ RUN wget https://gitlab.com/german.tischler/libmaus2/-/archive/2.0.794-release-2
 	./configure --prefix=/SOFT/libmaus2 && \
 	make -j8 && \
 	make -j8 install && \
+	cd /SOFT && \
 	rm -r /SOFT/libmaus2-2.0.794-release-20210706224245
 
 #Install biobambam2
@@ -53,6 +54,7 @@ RUN wget https://gitlab.com/german.tischler/biobambam2/-/archive/2.0.182-release
 	export PKG_CONFIG_PATH=/SOFT/libmaus2/lib/pkgconfig && \
 	./configure --prefix=/SOFT/biobambam2/ && \
 	make -j8 install && \
+	cd /SOFT && \
 	rm -r /SOFT/biobambam2-2.0.182-release-20210412001032  
 
 ENV PATH=${PATH}:/SOFT/biobambam2/bin
