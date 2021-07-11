@@ -9,8 +9,8 @@
 All software is installed on a separate layer in /SOFT directory.
 
 ##### To build the image go to the directory containing dockerfile and enter:
-`<docker image build -t docker_assignment>`
+`docker image build -t docker_assignment`
 ##### To run the container:
-`<docker container run docker_assignment>`
+`docker container run docker_assignment`
 ##### If you want to go to the container sh:
-`<docker container run -it docker_assignment>`
+`docker container run -it docker_assignment`
