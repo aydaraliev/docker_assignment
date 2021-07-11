@@ -1,16 +1,16 @@
-# docker_assignment
+# docker assignment
 
-IT. Тестовое задание №1 «Создание Docker-образа»
+#### This repository contains Dockerfile to build an image that is based on Ubuntu 18.04 and contains the following software with all the dependencies:
+	
+	* samtools version 1.12 with htslib plugins
+	* libdeflate version 1.7
+	* biobambam2 version 2.0.182-release-20210412001032
 
-1. Создайте собственный репозиторий на GitHub (https://github.com/).
-2. Добавьте короткое README с описанием Вашего репозитория.
-3. Создайте Dockerfile для образа, который будет удовлетворять следующим условиям:
-Базовый образ – Ubuntu:18.04;
-Каждая установленная программа должна стоять отдельным слоем;
-Каждая программа устанавливается в /SOFT/;
-4. Добавьте в Dockerfile установку samtools актуальной версии с максимальным количеством плагинов и расширений (в том числе libdeflate).
-5. Добавьте в Dockerfile установку biobambam актуальной версии**.
-6. Добавьте отдельным разделом в README команды сборки и запуска Docker-образа в интерактивном режиме.
+All software is installed on a separate layer in /SOFT directory.
 
-** - задание повышенной сложности, выполняется при условии выполнения задания стандартной сложности.
-
+##### To build the image go to the directory containing dockerfile and enter:
+`<docker image build -t docker_assignment>`
+##### To run the container:
+`<docker container run docker_assignment>`
+##### If you want to go to the container sh:
+`<docker container run -it docker_assignment>`
